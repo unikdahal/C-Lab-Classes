@@ -1,21 +1,25 @@
 #include<stdio.h>
 int main(){
-        int a=5
-        int *b=&a;
-        int b=6;
-        int c=7;
-        int d=8;
-        int **c=&b;
-        int ***d=&c;
+        
+        int a=4;
+        int *b;
+        b=&a;
+        printf("The value of a is %d\n",a);
+        printf("The address of a is %p\n",&a);
+        printf("\n");
+        printf("The value of b is %p\n",b);
+        printf("The address of b is %p\n",&b);
 
-        printf("%d\n",a);
-        printf("%d\n",*b);
-        printf("%p\n",&*b);
-        printf("%p\n",b);
-        printf("%p\n",&a);
-        printf("%p\n",b+1);
-        printf("%p\n",&*b+1);
-        printf("%p\n",&**c);
-        printf("%p\n",&***d);
-        printf("%p\n",&***d);
+         printf("\n");
+        int **c;
+        c=&b;
+        printf("The value of c is %p\n",c);
+        printf("The address of c is %p\n",&c);
+         printf("\n");
+        int ***d;
+        d=&c;
+        printf("The value of d is %p\n",d);
+        printf("The address of d is %p\n",&d);
+        return 0;
+        
 }
