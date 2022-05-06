@@ -1,19 +1,20 @@
 #include<stdio.h>
 int main(){
-	int arr[3][3];
+	int arr[4][4];
 	
-	for(int i=0;i<3;i++){
-		for(int j=0;j<3;j++)
+	for(int i=0;i<4;i++){
+		for(int j=0;j<4;j++)
 			scanf("%d",&arr[i][j]);
 	}
 			
-	for(int i=0;i<3;i++){
+	for(int i=0;i<4;i++){
 		
 			for(int j=0;j<i;j++){
-				printf("  ");
+				printf("   ");
 			}
-			for(int j=i;j<3;j++){
-					printf(" %d",arr[i][j]);
+			for(int j=i;j<4;j++){
+					printf("  %d",arr[i][j]);
 			}
 			printf("\n");
 	}
+}
