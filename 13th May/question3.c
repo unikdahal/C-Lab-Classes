@@ -12,4 +12,5 @@
     int main(){
         int a=5;
         int no=factorial(a);
-        printf("%d\n",no);
+        printf("%d",no);
+}

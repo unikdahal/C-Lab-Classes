@@ -2,6 +2,7 @@
 
 int f1(int **c){
     (**c)++;
+    return 0;
 }
 int main(){
     int a=5;
