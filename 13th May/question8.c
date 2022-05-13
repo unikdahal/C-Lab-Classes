@@ -1,0 +1,1 @@
+//WAF which will take an integer array and return the sum of all the elements maxium and minimum value
