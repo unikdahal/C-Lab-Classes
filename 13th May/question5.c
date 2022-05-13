@@ -14,8 +14,8 @@ int main(){
     int a=5;
     int *b=&a;
     f1(a);
-    printf("%d\n",a);
+    printf("The value of A doesn't change outside the function in call by value function .It still remains %d\n",a);
     f2(&b);
-    printf("%d\n",a);
+    printf("The value of A changes outside the function in call by refernce function .It changes to %d\n",a);
     return 0;
 }
