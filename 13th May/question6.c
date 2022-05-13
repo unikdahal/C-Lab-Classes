@@ -31,11 +31,7 @@ int f1(int a,int b,int c,int *min){
     
 }
     
-
-
-
-
-int main(){
+    .int main(){
     int a,b,c,d;
     printf("Enter three integer\n");
     scanf("%d%d%d",&a,&b,&c);

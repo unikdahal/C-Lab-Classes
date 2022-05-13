@@ -3,5 +3,15 @@
 #include<stdio.h>
 
 void f1(int a){
-    
+
+}
+
+int main(){
+    int a;
+    printf("Enter a three digit integer\n");
+    scanf("%d",&a);
+    int b=&a;
+    f1()
+    return 0;
+
 }
