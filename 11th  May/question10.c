@@ -4,8 +4,8 @@
 */
 
 #include<stdio.h>
-int fact(int n){
-    int fact=1;
+float fact(int n){
+    float fact=1;
     while (n>0)
     {
         fact=fact*n;
@@ -14,20 +14,25 @@ int fact(int n){
     return fact;
     
 }
-int f1(int n){
-    int a=1,b=1,i=0,c;
-    while (i<n)
+float f1(int n){
+    int a=1,b=1,i=1,c;
+    float sum=0;
+    sum= sum + a*1.0/(fact(2*i-1));
+    i++;
+    sum= sum + b*1.0/(fact(2*i-1));
+    i++;
+    while (i<=n)
     {
         c=a+b;
-        printf("%d",c/(fact(2*i-1)));
+        sum= sum + c*1.0/(fact(2*i-1));
         a=b;
         b=c;
         i++;
     }
-    return c;
+    return sum;
 }
 int main(){
     int n;
     scanf("%d",&n);
-    f1(n);
+    printf("The sum is %f",f1(n));
 }

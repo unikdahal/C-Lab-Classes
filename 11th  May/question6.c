@@ -1,7 +1,7 @@
 //Take a string and display in the following format 
 
 // AbcD PklM nT  VPR
-//A. P. N. Vpr]
+//AbcD P. N. Vpr]
 
 #include<stdio.h>
 int main(){
@@ -12,10 +12,11 @@ int main(){
     printf("%c.",a[0]);
     for(i=1;a[i]!='\0';i++)
     {
-        i
+        
         if(a[i]==' ')
         {
             printf(" %c.",a[i+1]-32);
         }
+        
     }
 }
