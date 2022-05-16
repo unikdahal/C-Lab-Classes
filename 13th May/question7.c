@@ -2,16 +2,21 @@
 
 #include<stdio.h>
 
-void f1(int a){
+void f1(int **b){
+    int c=**b%10;
+    int d=(**b/10)%10;
+    int e=(**b/100);
 
+    **b=c*100+d*10+e;
 }
 
 int main(){
     int a;
     printf("Enter a three digit integer\n");
     scanf("%d",&a);
-    int b=&a;
-    f1()
+    int *b=&a;
+    int c=**b;
+    printf("The new number is %d\n",c);
     return 0;
 
 }

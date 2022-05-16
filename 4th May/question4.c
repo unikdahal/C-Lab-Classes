@@ -1,3 +1,5 @@
+//To find the lowest among three number
+
 #include<stdio.h>
 int main(){
 
