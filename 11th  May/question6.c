@@ -12,11 +12,10 @@ int main(){
     printf("%c.",a[0]);
     for(i=1;a[i]!='\0';i++)
     {
-        if
+        i
         if(a[i]==' ')
         {
             printf(" %c.",a[i+1]-32);
-            int count =1;
         }
     }
 }
