@@ -1,18 +1,18 @@
-//Reverse the string
+//Take a string with multiple words and display how many spaces are present in the string
 
 #include<stdio.h>
 int main(){
-	char a[6];
-    printf("Enter a string of 6 characters");
-	scanf("%[^\n]s",a);
 
-    for (int  i = 0,j=5; i <j; i++,j--)
+    char a[50];
+    scanf("%[^\n]s",a);
+    int count=0;
+    for (int  i = 0;a[i]!='\0'; i++)
     {
-        char temp=a[i];
-        a[i]=a[j];
-        a[j]=temp;
-        
-
+        if(a[i]==' '){
+            count++;
+        }
     }
-	printf("%s",a);
+    printf("The number of spaces is %d",count);
+    return 0;
+	
 }

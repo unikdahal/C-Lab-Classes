@@ -1,4 +1,4 @@
-//Take a string with multiple words and display how many spaces are present in the string
+//count the number of word present in the string
 
 #include<stdio.h>
 int main(){
@@ -12,7 +12,8 @@ int main(){
             count++;
         }
     }
-    printf("The number of spaces is %d",count);
+    printf("The number of words is %d",count+1);
     return 0;
 	
 }
+
