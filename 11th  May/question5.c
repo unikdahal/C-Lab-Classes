@@ -1,24 +1,19 @@
-//Take a string and reverse it's each word 
-
-// ABC  PK LTM n
-// CBA_KP_MTL_n
+//Take a string and display in following manner
+// ABCD PKLM NT VPR 
+// Abcd Pklm Nt Vpr
 
 #include<stdio.h>
 int main(){
-    char a[100];
-    int i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
-    printf("Enter a string\n");
+    char a[50];
     scanf("%[^\n]s",a);
-    for(i=0;a[i]!='\0';i++){
-        if(a[i]==' '){
-            for(j=i-1;j>=0;j--){
-                printf("%c",a[j]);
-            }
-            printf(" ");
+    int i,j,k=0;
+    a[0]=a[0]-32;
+    for(i=1;a[i]!='\0';i++)
+    {
+        if(a[i]==' ')
+        {
+            a[i+1]=a[i+1]-32;
         }
     }
-    for(k=i-1;k>=0;k--){
-        printf("%c",a[k]);
-    }
-    return 0;
+printf("%s",a);
 }

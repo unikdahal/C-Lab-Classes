@@ -1,4 +1,4 @@
-//Reverse a string
+//Reverse every word present in a string
 #include<stdio.h>
 int main(){
     char a[100];
