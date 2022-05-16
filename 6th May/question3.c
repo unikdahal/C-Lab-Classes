@@ -1,3 +1,12 @@
+// Print in the format 
+
+// UNIKDA
+//  NIKDA
+//   IKDA
+//    KDA
+//     DA
+//      A
+
 #include<stdio.h>
 int main(){
 

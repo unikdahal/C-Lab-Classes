@@ -1,3 +1,6 @@
+//Take a string and reverse it
+
+
 #include<stdio.h>
 int main(){
     int n;
