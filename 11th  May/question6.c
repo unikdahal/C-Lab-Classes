@@ -5,18 +5,32 @@
 
 #include<stdio.h>
 int main(){
-    char a[50];
+    char a[100];
     scanf("%[^\n]s",a);
-    int i,j,k=0;
-    a[0]=a[0]-32;
-    printf("%c.",a[0]);
-    for(i=1;a[i]!='\0';i++)
+    int i,j,space=0,count=0;
+
+    for(i=0;a[i]!='\0';i++)
     {
-        
         if(a[i]==' ')
         {
-            printf(" %c.",a[i+1]-32);
+            space++;
         }
-        
     }
+
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]==' ')
+            count++;
+        
+        if (count<1 || count>space-1)
+        {
+            printf("%c",a[i]);
+        }
+        else if(a[i]==' ')
+        {
+            printf(" %c.",a[i+1]);
+        }
+    }       
+    
+    return 0;
 }
