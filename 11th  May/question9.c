@@ -1,20 +1,24 @@
-//WAF TO DISPLAY NTH FIBONACCI NUMBER
 
+  
+// WAF to print nth fibonacci
 #include<stdio.h>
 
-int f1(int n){
-    int a=1,b=1,i=1,c;
-    while (i<n-1)
-    {
-        c=a+b;
-        a=b;
-        b=c;
-        i++;
-    }
-    return c;
+int fibo(int a){
+    int i, n;
+    int t1 = 0, t2 = 1;
+    int nextTerm = t1 + t2;
+    scanf("%d", &n);
+    n=n-1;
+    for (i = 3; i <= n; ++i) {
+    t1 = t2;
+    t2 = nextTerm;
+    nextTerm = t1 + t2;
+}
+printf("%d",nextTerm);
 }
 int main(){
-    int n;
-    scanf("%d",&n);
-    printf("%d",f1(n));
+    int a;
+    printf("Enter the nth position: ");
+
+    fibo(a);
 }

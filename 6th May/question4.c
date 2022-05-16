@@ -1,3 +1,10 @@
+//Print in the format
+// E
+// DE
+// CDE
+// BCDE
+// ABCDE
+
 #include<stdio.h>
 int main(){
 
@@ -8,5 +15,6 @@ int main(){
         printf("%s\n",a+i);
 
     }
+    return 0;
     
 }

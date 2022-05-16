@@ -1,3 +1,5 @@
+//SUm of 2*2 as one element in 4*4
+
 #include<stdio.h>
 int main(){
     int arr[4][4],sumarr[2][2]={0};
@@ -27,4 +29,5 @@ int main(){
         }
         printf("\n");
     }
+    return 0;
 }

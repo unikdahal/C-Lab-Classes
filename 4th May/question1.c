@@ -1,3 +1,5 @@
+//Pointer pointing to different types of data
+
 #include<stdio.h>
 int main(){
 		

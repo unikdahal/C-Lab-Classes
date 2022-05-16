@@ -1,3 +1,5 @@
+//Triple Pointer and its related values
+
 #include<stdio.h>
 int main(){
         
