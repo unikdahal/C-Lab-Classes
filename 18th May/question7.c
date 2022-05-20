@@ -19,33 +19,22 @@ int main(){
         char name[20];
         int m[3];
         int min;
-    }s1,s2,s3;
-    printf("Enter the name of the student 1");
-    scanf("%s",s1.name);
-    printf("Enter the marks of the student 1 in 3 subjects");
-    scanf("%d%d%d",&s1.m[0],&s1.m[1],&s1.m[2]);
-    printf("Enter the name of the student 2");
-    scanf("%s",s2.name);
-    printf("Enter the marks of the student 2 in 3 subjects");
-    scanf("%d%d%d",&s2.m[0],&s2.m[1],&s2.m[2]);
-    printf("Enter the name of the student 3");
-    scanf("%s",s3.name);
-    printf("Enter the marks of the student 3 in 3 subjects");
-    scanf("%d%d%d",&s3.m[0],&s3.m[1],&s3.m[2]);
-
-    float avg1,avg2,avg3;
-    avg1=(s1.m[0]+s1.m[1]+s1.m[2])/3;
-    avg2=(s2.m[0]+s2.m[1]+s2.m[2])/3;
-    avg3=(s3.m[0]+s3.m[1]+s3.m[2])/3;
-    float avg=(avg1+avg2+avg3)/3;
-    printf("The average marks of the class is %f\n",avg);
-
-    s1.min=min(s1.m[0],s1.m[1],s1.m[2]);
-    s2.min=min(s2.m[0],s2.m[1],s2.m[2]);
-    s3.min=min(s3.m[0],s3.m[1],s3.m[2]);
-    int minc=min(s1.min,s2.min,s3.min);
-    printf("The minimum marks of the class is %d\n",minc);
+    }s[3];
+    for (int  i = 0; i < 3; i++)
+    {
+        printf("Enter the name of the student");
+        scanf("%s",s[i].name);
+        printf("Enter the marks of the student in 3 subjects");
+        scanf("%d%d%d",&s[i].m[0],&s[i].m[1],&s[i].m[2]);
+        s[i].min=min(s[i].m[0],s[i].m[1],s[i].m[2]);
+    }
+    for (int  i = 0; i < 3; i++)
+    {
+        printf("The name of the student is %s\n",s[i].name);
+        printf("The average marks of the student is %d\n",(s[i].m[0]+s[i].m[1]+s[i].m[2])/3);
+        printf("The minimum marks of the student is %d\n",s[i].min);
+    }
+    
+    printf("The minimum marks of class is %d",min(s[0].min,s[1].min,s[2].min));
     return 0;
-
-
 }
