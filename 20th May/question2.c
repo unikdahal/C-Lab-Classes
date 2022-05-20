@@ -6,6 +6,26 @@ struct dat
     int dd,mm,yy;
 };
 
+void presentAge(struct dat a,struct dat b,struct dat *c){
+    if (b.dd>=a.dd)
+    {
+        (*c).dd=b.dd-a.dd;
+    }
+    else{
+        (*c).dd=b.dd+30-a.dd;
+        b.mm--;
+    }
+    if (b.mm>a.mm)
+    {
+        (*c).mm=b.mm-a.mm;
+    }
+    else{
+        (*c).mm=b.mm+12-a.mm;
+        b.yy--;
+    }
+    (*c).yy=b.yy-a.yy;
+    }
+
 
 int main(){
     struct dat a,b,c;
@@ -14,24 +34,7 @@ int main(){
     printf("Enter today date  in the format yy-mm-dd");
     scanf("%d-%d-%d",&b.yy,&b.mm,&b.dd);
 
-    if (b.dd>=a.dd)
-    {
-        c.dd=b.dd-a.dd;
-    }
-    else{
-        c.dd=b.dd+30-a.dd;
-        b.mm--;
-    }
-    if (b.mm>a.mm)
-    {
-        c.mm=b.mm-a.mm;
-    }
-    else{
-        c.mm=b.mm+12-a.mm;
-        b.yy--;
-    }
-    c.yy=b.yy-a.yy;
-    
+    presentAge(a,b,&c);
     printf("You're  %d years %d month %d days old",c.yy,c.mm,c.dd);
     
 
