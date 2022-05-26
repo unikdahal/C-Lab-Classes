@@ -1,4 +1,4 @@
-#include<stdio.h>
+fr#include<stdio.h>
 int main(){
 	int arr[4][4];
 	
